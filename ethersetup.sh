@@ -29,6 +29,7 @@ npm install -g ganache-cli;
 npm install -g truffle;
 
 #clones workshops from http://github.com/utdcrypto to folders named by date of workshops
-x-terminal-emulator -e "curl https://raw.githubusercontent.com/utdcrypto/EthDevTools/master/cloneworkshops.sh | bash"&
+wget https://raw.githubusercontent.com/utdcrypto/EthDevTools/master/cloneworkshops.sh;
+x-terminal-emulator -e "./cloneworkshops.sh"&
 
 exit;
