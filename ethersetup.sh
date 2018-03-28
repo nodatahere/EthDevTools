@@ -30,6 +30,8 @@ npm install -g truffle;
 
 #clones workshops from http://github.com/utdcrypto to folders named by date of workshops
 wget https://raw.githubusercontent.com/utdcrypto/EthDevTools/master/cloneworkshops.sh;
-x-terminal-emulator -e "./cloneworkshops.sh"&
+chmod +x cloneworkshops.sh;
+x-terminal-emulator -e "/home/$USER/cloneworkshops.sh"&
+rm cloneworkshops.sh;
 
 exit;
