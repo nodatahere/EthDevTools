@@ -3,13 +3,13 @@
 #script by no_data_here <error.404.no.data.here@gmail.com>
 
 #add etherium ppa and make sure that all software installed via apt is prepared
-sudo apt install build-essential software-properties-common;
-sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt install -y build-essential software-properties-common;
+sudo add-apt-repository ppa:ethereum/ethereum;
 sudo apt update;
 sudo apt upgrade -y;
 sudo apt update;
 sudo apt upgrade -y;
-sudo apt install solc curl npm git geth;
+sudo apt install -y solc curl npm git geth;
 
 #install rust via rustup
 curl https://sh.rustup.rs -sSf | sh;
