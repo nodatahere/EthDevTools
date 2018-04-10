@@ -3,7 +3,7 @@
 #script by no_data_here <error.404.no.data.here@gmail.com>
 
 #add etherium ppa and make sure that all software installed via apt is prepared, relies on apt to handle things if packages already exist
-sudo apt install -y build-essential software-properties-common;
+sudo apt install -y build-essential software-properties-common curl;
 sudo add-apt-repository ppa:ethereum/ethereum;
 sudo apt update;
 sudo apt upgrade -y;
@@ -68,7 +68,7 @@ npm install -g truffle;
 fi
 #update all local and global npm installations
 npm update;
-npu update -g;
+npm update -g;
 
 #clones workshops from http://github.com/utdcrypto to folders named by date of workshops, relies on git skipping repos where folder already exists
 wget -qO- https://raw.githubusercontent.com/utdcrypto/EthDevTools/master/cloneworkshops.sh | bash;
